@@ -3,11 +3,11 @@
   "theme": "mint",
   "name": "WaaS Developer",
   "colors": {
-    "primary": "#16A34A",
+    "primary": "#64CCE9",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/img.png",
+  "favicon": "/xafer.png",
   "navigation": {
     "languages": [
       {
