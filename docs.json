@@ -1,102 +1,138 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "WaaS Developer",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/img.png",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Guides",
+        "language": "cn",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "概述",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "api-reference/merchant-provided-info",
+              "api-reference/deposit-modes-overview",
+              "api-reference/introduction"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "系统流程图",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "system-flow/funds-flow-cn",
+              "system-flow/deposit-flow-cn",
+              "system-flow/withdrawal-flow-cn",
+              "system-flow/checkout-flow-cn",
+              "system-flow/aggregation-flow-cn",
+              "system-flow/risk-notification-flow-cn"
+            ]
+          },
+          {
+            "group": "收银台",
+            "pages": [
+              "api-reference/checkout-page",
+              "api-reference/endpoint/getPreDepositInfo",
+              "api-reference/endpoint/getUserAddressWithCounter",
+              "api-reference/endpoint/getUserAddressIndependent"
+            ]
+          },
+          {
+            "group": "API 列表",
+            "pages": [
+              "api-reference/endpoint/getUserAddress",
+              "api-reference/endpoint/speedUp",
+              "api-reference/endpoint/getDepositOrder",
+              "api-reference/endpoint/withdrawWithoutVerify",
+              "api-reference/endpoint/withdrawRequest",
+              "api-reference/endpoint/getWithdrawOrder",
+              "api-reference/endpoint/getUserDailyStatistics"
+            ]
+          },
+          {
+            "group": "商户需提供的回调接口",
+            "pages": [
+              "api-reference/webhook/webhook-callback",
+              "api-reference/webhook/withdraw-confirmation-callback"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "language": "en",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Overview",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/en/merchant-provided-info",
+              "api-reference/en/deposit-modes-overview",
+              "api-reference/en/introduction"
+
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "System Flow Chart",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "system-flow/funds-flow-en",
+              "system-flow/deposit-flow-en",
+              "system-flow/withdrawal-flow-en",
+              "system-flow/checkout-flow-en",
+              "system-flow/aggregation-flow-en",
+              "system-flow/risk-notification-flow-en"
+            ]
+          },
+          {
+            "group": "Checkout",
+            "pages": [
+              "api-reference/en/checkout-page",
+              "api-reference/endpoint/en/getPreDepositInfo",
+              "api-reference/endpoint/en/getUserAddressWithCounter",
+              "api-reference/endpoint/en/getUserAddressIndependent"
+            ]
+          },
+          {
+            "group": "List of API Endpoints",
+            "pages": [
+              "api-reference/endpoint/en/getUserAddress",
+              "api-reference/endpoint/en/speedUp",
+              "api-reference/endpoint/en/getDepositOrder",
+              "api-reference/endpoint/en/withdrawWithoutVerify",
+              "api-reference/endpoint/en/withdrawRequest",
+              "api-reference/endpoint/en/getWithdrawOrder",
+              "api-reference/endpoint/en/getUserDailyStatistics"
+            ]
+          },
+          {
+            "group": "Merchant Callback API",
+            "pages": [
+              "api-reference/endpoint/en/webhook/webhook-callback",
+              "api-reference/endpoint/en/webhook/withdraw-confirmation-callback"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
+    ]
+  },
+  "logo": {
+    "light": "/logo/XAFERBlue.svg",
+    "dark": "/logo/logo.png"
+  },
+  "navbar": {
+    "_comment": {
+      "removed_links": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "label": "Support",
+          "href": "mailto:hi@mintlify.com"
         }
       ]
     }
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+  "appearance": {
+    "default": "light",
+    "strict": true
   }
 }
