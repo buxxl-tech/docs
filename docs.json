@@ -16,7 +16,7 @@
           {
             "group": "介绍",
             "pages": [
-              "api-reference/uu_wallet_introduction",
+              "api-reference/introduction",
               "api-reference/deposit-modes-overview",
               "api-reference/supported-tokens",
               "api-reference/risk-reference"
