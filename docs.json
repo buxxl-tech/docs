@@ -115,7 +115,7 @@
           {
             "group": "Introduction",
             "pages": [
-              "api-reference/en/uu_wallet_introduction",
+              "api-reference/en/introduction",
               "api-reference/en/deposit-modes-overview",
               "api-reference/en/supported-tokens",
               "api-reference/en/risk-reference"
